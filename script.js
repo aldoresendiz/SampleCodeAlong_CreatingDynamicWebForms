@@ -7,7 +7,7 @@ function createObject(content) {
     objeto.textContent = content;
 
     const objetoI = document.createElement('input');
-    objetoI.id = String(content).toLowerCase().replace(' ', '');
+    objetoI.id = String(content).toLowerCase().replaceAll(' ', '');
     
     objeto.style.display = objetoI.style.display = 'block';
     document.body.append(objeto, objetoI);
